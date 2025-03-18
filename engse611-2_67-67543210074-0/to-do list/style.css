@@ -1,0 +1,157 @@
+/* ตั้งค่าพื้นฐาน */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f9f9f9, #e6f7ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* กล่องหลักของ To-Do List */
+.todo-container {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 400px;
+    transition: all 0.3s ease;
+}
+
+.todo-container:hover {
+    transform: scale(1.02);
+}
+
+/* หัวข้อ */
+h1 {
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: #333;
+}
+
+/* กล่องป้อนข้อมูล */
+.input-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+#todo-input {
+    flex: 1;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+}
+
+#todo-input:focus {
+    border-color: #4CAF50;
+}
+
+/* ปุ่มเพิ่มรายการ */
+#add-btn {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 15px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+#add-btn:hover {
+    background: #45a049;
+}
+
+/* รายการ To-Do */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    background: white;
+    border-radius: 8px;
+    margin-top: 8px;
+    transition: all 0.3s ease;
+}
+
+li:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* ถ้าทำเสร็จแล้วจะขีดเส้น */
+.completed {
+    text-decoration: line-through;
+    color: gray;
+    opacity: 0.7;
+}
+
+/* ปุ่มลบและทำเสร็จ */
+button.delete-btn, button.complete-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+button.delete-btn {
+    color: #e74c3c;
+}
+
+button.complete-btn {
+    color: #2ecc71;
+}
+
+button.delete-btn:hover {
+    color: #c0392b;
+}
+
+button.complete-btn:hover {
+    color: #27ae60;
+}
+
+/* ปุ่มล่าง */
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+#clear-completed, #clear-all {
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+#clear-completed {
+    background: #e0e0e0;
+}
+
+#clear-all {
+    background: #e74c3c;
+    color: white;
+}
+
+#clear-completed:hover {
+    background: #d6d6d6;
+}
+
+#clear-all:hover {
+    background: #c0392b;
+}

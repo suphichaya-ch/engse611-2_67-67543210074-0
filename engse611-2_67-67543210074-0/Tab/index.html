@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabbed To-Do List & Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="tab-container">
+        <div class="tabs">
+            <button class="tab-btn active" data-tab="gallery">Gallery</button>
+            <button class="tab-btn" data-tab="todo">To-Do List</button>
+        </div>
+
+        <div class="tab-content">
+            <!-- แกลเลอรีรูปภาพ -->
+            <div id="gallery" class="tab-pane active">
+                <h2>Image Gallery</h2>
+                <div class="slider-container">
+                    <button class="slider-btn prev">&#10094;</button>
+                    <div class="slider">
+                        <div class="slide active"><img src="https://i.pinimg.com/736x/70/47/a5/7047a5f036eb0344c3396ead26b46541.jpg" alt="Image 1"></div>
+                        <div class="slide"><img src="https://i.pinimg.com/736x/5b/3b/09/5b3b092c343260b4ae0521f7f77a7abb.jpg" alt="Image 2"></div>
+                        <div class="slide"><img src="https://i.pinimg.com/474x/f6/81/d2/f681d2933dd017f99868f34438f6c2c7.jpg" alt="Image 3"></div>
+                        <div class="slide"><img src="https://i.pinimg.com/736x/7e/b2/da/7eb2daa14e0f7a3ca38d51e072d42478.jpg" alt="Image 3"></div>
+                    </div>
+                    <button class="slider-btn next">&#10095;</button>
+                </div>
+            </div>
+
+            <!-- To-Do List -->
+            <div id="todo" class="tab-pane">
+                <h2>To-Do List</h2>
+                <div class="todo-container">
+                    <input type="text" id="todo-input" placeholder="เพิ่มรายการใหม่...">
+                    <button id="add-todo">เพิ่ม</button>
+                    <ul id="todo-list"></ul>
+                    <button id="clear-done">ลบรายการที่เสร็จแล้ว</button>
+                    <button id="clear-all">ลบทั้งหมด</button>
+                </div>
+            </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

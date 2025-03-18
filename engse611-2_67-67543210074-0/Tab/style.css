@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+/* Tabs */
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.tab-btn {
+    padding: 10px 20px;
+    border: none;
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+.tab-btn.active {
+    background-color: #555;
+    color: white;
+}
+
+/* Tab Content */
+.tab-pane {
+    display: none;
+}
+
+.tab-pane.active {
+    display: block;
+}
+
+/* Image Slider */
+.slider-container {
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+}
+
+.slider {
+    display: flex;
+    overflow: hidden;
+}
+
+.slide {
+    display: none;
+}
+
+.slide.active {
+    display: block;
+}
+
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+/* To-Do List */
+.todo-container {
+    text-align: center;
+}
+
+#todo-input {
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#add-todo, #clear-done, #clear-all {
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+#add-todo { background: green; color: white; }
+#clear-done { background: gray; color: white; }
+#clear-all { background: red; color: white; }
